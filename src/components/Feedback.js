@@ -14,7 +14,7 @@ class Feedback extends Component {
 			nameInput: '',
 			messageInput: '',
 			emailInput: '',
-			ratingInput: 0
+			ratingInput: -1
 		};
 		this.handleButtonClick = this.handleButtonClick.bind(this);
 		this.handleClose = this.handleClose.bind(this);
@@ -57,7 +57,7 @@ class Feedback extends Component {
 		if (showButtonOnSubmit) {
 			this.setState({ showButton: true });
 		}
-		this.setState({ showForm: false, nameInput: '', messageInput: '', ratingInput: 0, emailInput: '' });
+		this.setState({ showForm: false, nameInput: '', messageInput: '', ratingInput: -1, emailInput: '' });
 		handleClose();
 	}
 	handleClose() {
