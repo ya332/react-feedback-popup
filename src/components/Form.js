@@ -6,7 +6,6 @@ import Body from './Body';
 const formStyles = {
     position: 'fixed',
     backgroundColor: '#FAFAFA',
-    right: '45px',
     border: '1px solid #dcdcdc',
     borderRadius: '6px 6px 0 0',
     zIndex: '50000',
@@ -19,27 +18,34 @@ class Form extends Component {
     const {
       headerStyles,
       headerText,
+      position,
       handleClose,
       handleSubmit,
       handleMessageInput,
       handleEmailInput,
       handleRatingInput,
+      handleCustomPosition,
       messageInput,
       emailInput,
       ratingInput,
       showEmailInput,
       showMessageInput,
-      showRatingInput
+      showRatingInput,
+      numberOfStars,
+      bodyText
     } = this.props;
 
+    var customFormStyles = handleCustomPosition(position, formStyles); 
     return(
-      <div style={formStyles}>
+      <div style={customFormStyles}>
         <Header
           styles={headerStyles}
           headerText={headerText}
           handleClose={handleClose}
           />
         <Body
+          bodyText={bodyText}
+          numberOfStars={numberOfStars}
           showEmailInput={showEmailInput}
           showMessageInput={showMessageInput}
           showRatingInput={showRatingInput}

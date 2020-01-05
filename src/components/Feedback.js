@@ -6,6 +6,17 @@ import PropTypes from 'prop-types';
 
 const isEmpty = str => !str.trim().length;
 
+const handleCustomPosition = ((position, formStyles) => {
+	var customFormStyles;
+	if (position==="left") {
+		customFormStyles = {...formStyles, left: "5%"};
+	}
+	else {
+		customFormStyles = {...formStyles, right: "5%"};
+	} 
+	return customFormStyles;
+})
+
 class Feedback extends Component {
 
 	constructor(props) {
@@ -90,7 +101,8 @@ class Feedback extends Component {
 			showNameInput,
 			showEmailInput,
 			showRatingInput,
-			showMessageInput
+			showMessageInput,
+			numberOfStars
 		} = this.props;
 
 		return (
@@ -99,6 +111,7 @@ class Feedback extends Component {
 					<div>
 						<Form
 							headerText={headerText}
+							numberOfStars={numberOfStars}
 							position={position}
 							headerStyles={headerStyles}
 							headerBtnStyles={headerBtnStyles}
@@ -115,14 +128,17 @@ class Feedback extends Component {
 							ratingInput={this.state.ratingInput}
 							messageInput={this.state.messageInput}
 							handleMessageInput={this.handleMessageInput}
+							handleCustomPosition={handleCustomPosition}
 						/>
 					</div>
 				}
 				{this.state.showButton &&
 					<Button
+						position={position}
 						styles={buttonStyles}
 						text={buttonText}
 						handleButtonClick={this.handleButtonClick}
+						handleCustomPosition={handleCustomPosition}
 					/>
 				}
 			</div>

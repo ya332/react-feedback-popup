@@ -22,6 +22,10 @@ function App() {
 			</header>
 			<FeedBack
 				position="left"
+				numberOfStars={5}
+				headerText="Hello"
+				bodyText="Custom Body test"
+				buttonText="This is also custom"
 				handleClose={() => console.log("handleclose")}
 				handleSubmit={(data) => 
 					fetch('https://formspree.io/moqjznjg', {
