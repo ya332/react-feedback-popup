@@ -1,7 +1,7 @@
 {
-		"name": "testing_react-feedback-popup",
+		"name": "react-feedback-popup",
 		"version": "0.1.0",
-		"description": "React component to get user feedback via popup",
+		"description": "A highly customizable React component to get user feedback via a popup",
 		"files": [
 				"build"
 		],
@@ -23,12 +23,12 @@
 		},
 		"keywords": [
 				"React",
-				"Developer",
-				"Author",
-				"Tag",
-				"Created",
-				"By",
-				"Made"
+				"Feedback",
+				"Rating",
+				"Popup",
+				"Input",
+				"Star",
+				"Component"
 		],
 		"homepage": "https://github.com/ya332/react-feedback-popup#readme",
 		"main": "build/index.js",
@@ -47,7 +47,7 @@
 		},
 		"scripts": {
 				"start": "react-scripts start",
-				"build": "react-scripts build",
+				"build": "webpack --mode production --config webpack.config.js",
 				"test": "react-scripts test",
 				"eject": "react-scripts eject"
 		},
@@ -65,5 +65,8 @@
 						"last 1 firefox version",
 						"last 1 safari version"
 				]
+		},
+		"devDependencies": {
+				"webpack-cli": "^3.3.10"
 		}
 }
