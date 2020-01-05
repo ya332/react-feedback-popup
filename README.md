@@ -17,6 +17,7 @@ React-Feedback-Popup is a simple component to display author name at the bottom 
 
 - Gets user name, email, rating.
 - User can determine the position (left or right)
+- Form validation (name, email, feedback and rating are required)
 
 ### Why
 
