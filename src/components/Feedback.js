@@ -3,6 +3,9 @@ import Button from './Button';
 import Form from './Form';
 import PropTypes from 'prop-types';
 
+
+const isEmpty = str => !str.trim().length;
+
 class Feedback extends Component {
 
 	constructor(props) {
@@ -48,17 +51,22 @@ class Feedback extends Component {
 	}
 	handleSubmit() {
 		const { showButtonOnSubmit, handleSubmit, handleClose } = this.props;
-		handleSubmit({
-			name: this.state.nameInput,
-			message: this.state.messageInput,
-			rating: this.state.ratingInput,
-			email: this.state.emailInput
-		});
-		if (showButtonOnSubmit) {
-			this.setState({ showButton: true });
+		// Check if the values are missing.
+		if (isEmpty(this.state.nameInput) || isEmpty(this.state.emailInput) || isEmpty(this.state.messageInput) || (this.state.ratingInput===-1)) {
+			alert("Fields are missing!");
+		} else {
+			handleSubmit({
+				name: this.state.nameInput,
+				message: this.state.messageInput,
+				rating: this.state.ratingInput,
+				email: this.state.emailInput
+			});
+			if (showButtonOnSubmit) {
+				this.setState({ showButton: true });
+			}
+			this.setState({ showForm: false, nameInput: '', messageInput: '', ratingInput: -1, emailInput: '' });
+			handleClose();
 		}
-		this.setState({ showForm: false, nameInput: '', messageInput: '', ratingInput: -1, emailInput: '' });
-		handleClose();
 	}
 	handleClose() {
 		const { handleClose, showButtonOnClose } = this.props;
@@ -73,6 +81,7 @@ class Feedback extends Component {
 		const {
 			headerText,
 			buttonText,
+			position,
 			buttonStyles,
 			headerStyles,
 			headerBtnStyles,
@@ -90,6 +99,7 @@ class Feedback extends Component {
 					<div>
 						<Form
 							headerText={headerText}
+							position={position}
 							headerStyles={headerStyles}
 							headerBtnStyles={headerBtnStyles}
 							headerBtnText={headerBtnText}
