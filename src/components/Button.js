@@ -8,7 +8,6 @@ const defaultButtonStyles = {
   fontWeight: "bold",
   padding:'10px 15px',
   position:'fixed',
-  right:'5%',
   borderRadius:'5px 5px 0 0',
   border: 'none',
   bottom:0,
@@ -20,17 +19,13 @@ class Button extends Component {
 
   constructor(props){
     super(props);
-    this.handleButtonClick = this.handleButtonClick.bind(this);
-  }
-
-  handleButtonClick(){
-    alert("Thanks for submitting your feedback!");
+    
   }
 
   render(){
-    const {handleButtonClick, text, styles} = this.props;
+    const {handleButtonClick, text, styles, position, handleCustomPosition} = this.props;
     return(
-      <button onClick={handleButtonClick} type='button' style={styles}>
+      <button type='button' onClick={handleButtonClick} style={handleCustomPosition(position, styles)}>
         {text}
       </button>
     )
@@ -38,12 +33,15 @@ class Button extends Component {
 }
 
 Button.propTypes = {
+  handleCustomPosition: PropTypes.func,
   handleButtonClick: PropTypes.func,
   styles: PropTypes.object,
-  text: PropTypes.string
+  text: PropTypes.string,
+  position: PropTypes.string
 }
 
 Button.defaultProps = {
+  position: PropTypes.string,
   styles: defaultButtonStyles,
   text: 'Feedback?  ☝️',
   handleButtonClick: () => this.handleButtonClick
