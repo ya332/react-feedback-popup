@@ -13,7 +13,6 @@ const defaultButtonStyles = {
   border: 'none',
   bottom:0,
   backgroundColor:'#34495e',
-  color: '#ffffff',
   width: 'auto'
 }
 
@@ -25,7 +24,7 @@ class Button extends Component {
   }
 
   handleButtonClick(){
-    const {handleButtonClick} = this.props;
+    alert("Thanks for submitting your feedback!");
   }
 
   render(){
@@ -47,7 +46,7 @@ Button.propTypes = {
 Button.defaultProps = {
   styles: defaultButtonStyles,
   text: 'Feedback?  ☝️',
-  handleButtonClick: () => {}
+  handleButtonClick: () => this.handleButtonClick
 }
 
 

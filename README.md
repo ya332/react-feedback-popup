@@ -32,5 +32,5 @@ Check it out [here]()
 The preferred way of using the component is via NPM
 
 ```
-npm install --save react-made-by
+npm install --save react-feedback-popup
 ```

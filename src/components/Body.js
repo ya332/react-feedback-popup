@@ -1,4 +1,6 @@
 import React from 'react';
+import StarRatings from 'react-star-ratings';
+
 const defaultBodyStyles = {
 	padding: '10px',
 	fontSize: '14px',
@@ -29,14 +31,22 @@ const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratin
 				<input type='email' rows="5" value={emailInput} placeholder="Enter Your Email" onChange={e => handleMessageInput('email', e.target.value)} style={defaultMessageStyles} />
 			</div>
 		}
-		{showRatingInput &&
-			<div>
-				<textarea rows="5" value={ratingInput} placeholder="Enter Your Rating" onChange={e => handleMessageInput('rating', e.target.value)} style={defaultMessageStyles} />
-			</div>
-		}
 		{showMessageInput &&
 			<div>
 				<textarea rows="5" value={messageInput} placeholder="Enter your feedback here." onChange={e => handleMessageInput('message', e.target.value)} style={defaultMessageStyles} />
+			</div>
+		}
+		{showRatingInput &&
+			<div style={defaultMessageStyles}>
+				<StarRatings 
+					rating={ratingInput}
+					starRatedColor="blue"
+					changeRating={newRating => handleMessageInput('rating', newRating)}
+					numberOfStars={5}
+					name='rating'
+					starDimension="35px"
+					starSpacing="10px"
+				/>
 			</div>
 		}
 	</div>

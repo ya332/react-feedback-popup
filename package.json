@@ -1,66 +1,69 @@
 {
-  "name": "testing_react-feedback-popup",
-  "version": "0.1.0",
-	"description": "React component to get user feedback via popup",
-	"files":[ "build" ],
-	"author": {
-		"name": "Yigit Alparslan",
-		"email": "alparslanyigitcan@gmail.com"
-	},
-	"license": "MIT",
-	"engineStrict": true,
-	"engines": {
-		"node": ">=12.9.1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ya332/react-feedback-popup.git"
-	},
-	"bugs": {
-		"url": "https://github.com/ya332/react-feedback-popup/issues"
-	},
-	"keywords": [
-		"React",
-		"Developer",
-		"Author",
-		"Tag",
-		"Created",
-		"By",
-		"Made"
-	],
-	"homepage": "https://github.com/ya332/react-feedback-popup#readme",
-	"main": "build/index.js",
-	"unpkg": "build/index.js",
-	"publishConfig": {
-		"access": "public"
-	},
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "3.3.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+		"name": "testing_react-feedback-popup",
+		"version": "0.1.0",
+		"description": "React component to get user feedback via popup",
+		"files": [
+				"build"
+		],
+		"author": {
+				"name": "Yigit Alparslan",
+				"email": "alparslanyigitcan@gmail.com"
+		},
+		"license": "MIT",
+		"engineStrict": true,
+		"engines": {
+				"node": ">=12.9.1"
+		},
+		"repository": {
+				"type": "git",
+				"url": "https://github.com/ya332/react-feedback-popup.git"
+		},
+		"bugs": {
+				"url": "https://github.com/ya332/react-feedback-popup/issues"
+		},
+		"keywords": [
+				"React",
+				"Developer",
+				"Author",
+				"Tag",
+				"Created",
+				"By",
+				"Made"
+		],
+		"homepage": "https://github.com/ya332/react-feedback-popup#readme",
+		"main": "build/index.js",
+		"unpkg": "build/index.js",
+		"publishConfig": {
+				"access": "public"
+		},
+		"dependencies": {
+				"@testing-library/jest-dom": "^4.2.4",
+				"@testing-library/react": "^9.3.2",
+				"@testing-library/user-event": "^7.1.2",
+				"react": "^16.12.0",
+				"react-dom": "^16.12.0",
+				"react-scripts": "3.3.0",
+				"react-star-ratings": "^2.3.0"
+		},
+		"scripts": {
+				"start": "react-scripts start",
+				"build": "react-scripts build",
+				"test": "react-scripts test",
+				"eject": "react-scripts eject"
+		},
+		"eslintConfig": {
+				"extends": "react-app"
+		},
+		"browserslist": {
+				"production": [
+						">0.2%",
+						"not dead",
+						"not op_mini all"
+				],
+				"development": [
+						"last 1 chrome version",
+						"last 1 firefox version",
+						"last 1 safari version"
+				]
+		}
 }
