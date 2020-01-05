@@ -22,13 +22,13 @@ const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratin
 		</div>
 		{showNameInput &&
 			<div>
-				<input type='text' rows="5" value={nameInput} placeholder="Enter Your Name" onChange={e => handleMessageInput('name', e.target.value)} style={defaultMessageStyles} />
+				<input type='text' rows="5" value={nameInput} placeholder="Enter Your Name" required onChange={e => handleMessageInput('name', e.target.value)} style={defaultMessageStyles} />
 			</div>
 		}
 
 		{showEmailInput &&
 			<div>
-				<input type='email' rows="5" value={emailInput} placeholder="Enter Your Email" onChange={e => handleMessageInput('email', e.target.value)} style={defaultMessageStyles} />
+				<input type='email' rows="5" value={emailInput} placeholder="Enter Your Email" required onChange={e => handleMessageInput('email', e.target.value)} style={defaultMessageStyles} />
 			</div>
 		}
 		{showMessageInput &&
