@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import FeedBack from './components/Feedback';
 import './App.css';
 
 function App() {
@@ -19,6 +20,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <FeedBack 
+                position="left"
+                handleClose={()=> console.log("handleclose")}
+                handleSubmit={()=> console.log("handleclose")}
+                handleButtonClick={()=> console.log("handleclose")}
+      />
     </div>
   );
 }
