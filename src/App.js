@@ -25,14 +25,21 @@ function App() {
 				handleClose={() => console.log("handleclose")}
 				handleSubmit={(data) => 
 					fetch('https://formspree.io/moqjznjg', {
+						headers: {
+							Accept: 'application/json',
+							'Content-Type': 'application/json'
+						},
 						method: 'POST', // or 'PUT'
-						mode: "no-cors",
 						body: JSON.stringify(data),
-					}).then((response) => response.json())
-					.then((data) => {
-						console.log('Success:', data);
+					}).then((response) => { 
+						if (!response.ok) {
+							return Promise.reject('Our servers are having issues! We couldn\'t send your feedback!');
+						}
+						response.json()
+					}).then(() => {
+						alert('Success!');
 					}).catch((error) => {
-						console.error('Error:', error);
+						alert('Our servers are having issues! We couldn\'t send your feedback!', error);
 					})
 				}
 				handleButtonClick={() => console.log("handleButtonClick")}
