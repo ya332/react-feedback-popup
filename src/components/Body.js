@@ -15,7 +15,7 @@ const defaultMessageStyles = {
 	fontFamily: 'arial'
 }
 
-const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratingInput, handleMessageInput, showNameInput, showMessageInput, showRatingInput, showEmailInput }) => (
+const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratingInput, handleMessageInput, showNameInput, showMessageInput, showRatingInput, showEmailInput, numberOfStars }) => (
 	<div style={bodyStyles}>
 		<div style={defaultMessageStyles}>
 			<p>{bodyText}</p>
@@ -42,7 +42,7 @@ const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratin
 					rating={ratingInput}
 					starRatedColor="blue"
 					changeRating={newRating => handleMessageInput('rating', newRating)}
-					numberOfStars={5}
+					numberOfStars={numberOfStars}
 					name='rating'
 					starDimension="35px"
 					starSpacing="10px"
@@ -58,7 +58,8 @@ Body.defaultProps = {
 	showEmailInput: true,
 	showRatingInput: true,
 	showMessageInput: true,
-	showNameInput: true
+	showNameInput: true,
+	numberOfStars: 5
 }
 
 export default Body;
