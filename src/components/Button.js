@@ -17,10 +17,6 @@ const defaultButtonStyles = {
 
 class Button extends Component {
 
-  constructor(props){
-    super(props);
-    
-  }
 
   render(){
     const {handleButtonClick, text, styles, position, handleCustomPosition} = this.props;
