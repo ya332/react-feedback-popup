@@ -1,15 +1,16 @@
 import React from 'react';
 
 const defaultButtonStyles = {
-   position:'absolute',
-   fontSize:'20px',
-   right:'15px',
-   float:'right',
-   color: '#ffffff',
-   background: 'none',
-   border: 0,
-   fontWeight: 'bold'
- }
+  position:'absolute',
+  fontSize:'20px',
+  right:'15px',
+  color: '#ffffff',
+  background: 'none',
+  border: 0,
+  fontWeight: 'bold',
+  lineHeight: '40px',
+  height: '40px'
+}
 
 const defaultHeaderStyles = {
   lineHeight: '40px',
@@ -32,7 +33,7 @@ const Header = ({headerText, headerBtnText, handleClose, headerStyles, headerBtn
 
 Header.defaultProps = {
   headerText: 'Have Feedback? 📝',
-  headerBtnText: 'x',
+  headerBtnText: 'X',
   headerBtnStyles: defaultButtonStyles,
   headerStyles: defaultHeaderStyles
 }
