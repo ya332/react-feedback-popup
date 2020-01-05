@@ -1,7 +1,39 @@
 {
   "name": "testing_react-feedback-popup",
   "version": "0.1.0",
-  "private": true,
+	"description": "React component to get user feedback via popup",
+	"files":[ "build" ],
+	"author": {
+		"name": "Yigit Alparslan",
+		"email": "alparslanyigitcan@gmail.com"
+	},
+	"license": "MIT",
+	"engineStrict": true,
+	"engines": {
+		"node": ">=12.9.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ya332/react-feedback-popup.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ya332/react-feedback-popup/issues"
+	},
+	"keywords": [
+		"React",
+		"Developer",
+		"Author",
+		"Tag",
+		"Created",
+		"By",
+		"Made"
+	],
+	"homepage": "https://github.com/ya332/react-feedback-popup#readme",
+	"main": "build/index.js",
+	"unpkg": "build/index.js",
+	"publishConfig": {
+		"access": "public"
+	},
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
