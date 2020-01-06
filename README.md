@@ -24,9 +24,8 @@ I needed a "feedback component" for my [projects](http://ya332.github.io#project
 
 ### Demo
 
-![img](./assets/demo.png)
+![](./assets/demo.gif)
 
-Check it out [here]()
 
 ### Installation
 
