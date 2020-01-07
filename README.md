@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [![npm downloads](https://img.shields.io/npm/dm/react-feedback-popup.svg?style=flat-square)](https://www.npmjs.com/package/react-feedback-popup)
 [![build status](https://travis-ci.org/ya332/react-feedback-popup.svg?branch=master)](https://travis-ci.org/ya332/react-feedback-popup)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-<a href="https://codeclimate.com/github/ya332/react-feedback-popup/maintainability"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/maintainability" /></a>
+<a href="https://codeclimate.com/github/ya332/react-feedback-popup/maintainability"><img src="https://api.codeclimate.com/v1/badges/7e7b23995232a5224e2e/maintainability" /></a>
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/ya332/react-made-by/blob/master/CONTRIBUTING.md)
 
 
