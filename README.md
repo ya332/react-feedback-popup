@@ -3,7 +3,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [![build status](https://travis-ci.org/ya332/react-feedback-popup.svg?branch=master)](https://travis-ci.org/ya332/react-made-by)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 <a href="https://codeclimate.com/github/ya332/react-feedback-popup/maintainability"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/maintainability" /></a>
-<a href="https://codeclimate.com/github/ya332/react-feedback-popup/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/test_coverage" /></a>
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/ya332/react-made-by/blob/master/CONTRIBUTING.md)
 
 
@@ -14,10 +13,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 React-Feedback-Popup is balzingly fast and highly customizable component to get user feedback.
 
 Collapsed Feedback Popup:
-<img src="./assets/collapsed_tag.png" alt="Demo tag" width="400" height="100">
+<img src="./assets/collapsed_tag.png" alt="Demo tag">
 
 Expanded Feedback Popup:
-<img src="./assets/expanded_tag.png" alt="Demo tag" width="400" height="100">
+<img src="./assets/expanded_tag.png" alt="Demo tag">
 
 ### Features
 
