@@ -5,7 +5,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 <a href="https://codeclimate.com/github/ya332/react-feedback-popup/maintainability"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/maintainability" /></a>
 <a href="https://codeclimate.com/github/ya332/react-feedback-popup/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/test_coverage" /></a>
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/ya332/react-made-by/blob/master/CONTRIBUTING.md)
-<a href="https://www.buymeacoffee.com/ya332" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/arial-yellow.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
 
 
 <a href="https://www.buymeacoffee.com/ya332" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/arial-yellow.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
