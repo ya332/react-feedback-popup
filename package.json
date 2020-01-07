@@ -1,6 +1,6 @@
 {
 		"name": "react-feedback-popup",
-		"version": "1.0.5",
+		"version": "1.0.6",
 		"description": "A highly customizable React component to get user feedback via a popup",
 		"files": [
 				"build/index.js"

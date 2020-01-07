@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # releases a new version
+# Make sure the input to this matches the version number in package.json
 release () {
   echo "Version $1 in progress"
   git tag v$1 &&
