@@ -5,14 +5,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [![build status](https://travis-ci.org/ya332/react-feedback-popup.svg?branch=master)](https://travis-ci.org/ya332/react-feedback-popup)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 <a href="https://codeclimate.com/github/ya332/react-feedback-popup/maintainability"><img src="https://api.codeclimate.com/v1/badges/7e7b23995232a5224e2e/maintainability" /></a>
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/ya332/react-made-by/blob/master/CONTRIBUTING.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/ya332/react-feedback-popup/blob/master/CONTRIBUTING.md)
 
 
 <a href="https://www.buymeacoffee.com/ya332" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/arial-yellow.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
 
 # React-Feedback-Popup
 
-React-Feedback-Popup is blazingly fast and highly customizable component to get user feedback.
+React-Feedback-Popup is a blazingly fast and highly customizable component to get user feedback.
 
 Collapsed Feedback Popup:
 
@@ -166,8 +166,8 @@ The component is written in ES6 and uses [Webpack](http://webpack.github.io/) as
 #### Set up instructions
 
 ```
-git clone git@github.com:ya332/react-made-by.git
-cd react-made-by
+git clone git@github.com:ya332/react-feedback-popup.git
+cd react-feedback-popup
 npm install
 npm run start
 ```
@@ -176,9 +176,8 @@ open [http://localhost:3000](http://localhost:3000)
 
 ### Contributing
 
-Got ideas on how to make this better? Open an issue [here!](https://github.com/ya332/react-made-by/issues/new)
+Got ideas on how to make this better? Open an issue [here!](https://github.com/ya332/react-feedback-popup/issues/new)
+Issues, Pull Requests and all Comments are welcome!
 
-Also thanks to the awesome contributors who've made the library far better!
-
-[default-suggestions-filter-logic]: https://github.com/ya332/react-made-by/blob/v4.0.1/lib/MadeBy.js#L83
+[default-suggestions-filter-logic]: https://github.com/ya332/react-feedback-popup/blob/v4.0.1/lib/MadeBy.js#L83
 [includes-polyfill]: https://github.com/mathiasbynens/String.prototype.includes
