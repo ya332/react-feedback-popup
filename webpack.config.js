@@ -1,11 +1,13 @@
-var path = require("path");
+var path = require('path');
+
 module.exports = {
-	entry: "./src/App.js",
-	output: {
-		path: path.resolve(__dirname, "build"),
-		filename: "index.js",
-		libraryTarget: "commonjs2" // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
-	},
+    mode: 'production',
+    entry: './src/components/index.js',
+    output: {
+        path: path.resolve('build'),
+        filename: 'index.js',
+        libraryTarget: 'commonjs2'
+    },
     module: {
         rules: [
             {
@@ -14,7 +16,7 @@ module.exports = {
                 use: 'babel-loader'
             }
         ]
-    },
+	},
 	externals: {  // this line is just to use the React dependency of our parent-testing-project instead of using our own React.
 		react: {
 			root: 'React',
@@ -31,4 +33,4 @@ module.exports = {
 			umd: 'react-dom'
 		}
 	}
-};
+}
