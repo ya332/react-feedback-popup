@@ -22,6 +22,10 @@ Expanded Feedback Popup:
 
 <img src="./assets/expanded_tag.png" alt="Demo tag">
 
+# Live Demo
+
+[Live Demo at Codesanbox](https://codesandbox.io/s/silly-antonelli-cnix1?fontsize=14&hidenavigation=1&theme=dark)
+
 ### Features
 
 - Gets user name, email, rating.
@@ -48,7 +52,7 @@ npm install --save react-feedback-popup
 
 ### Usage
 
-Here's a sample implementation that creates the "Made By {NAME}" the component on default Create-React-App page.
+Here's a sample implementation that creates a custom popup on a dummy Create-React-App page.
 
 ```javascript
 import React from 'react';
