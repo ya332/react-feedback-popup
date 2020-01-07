@@ -12,12 +12,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # React-Feedback-Popup
 
-React-Feedback-Popup is balzingly fast and highly customizable component to get user feedback.
+React-Feedback-Popup is blazingly fast and highly customizable component to get user feedback.
 
 Collapsed Feedback Popup:
+
 <img src="./assets/collapsed_tag.png" alt="Demo tag">
 
 Expanded Feedback Popup:
+
 <img src="./assets/expanded_tag.png" alt="Demo tag">
 
 ### Features
