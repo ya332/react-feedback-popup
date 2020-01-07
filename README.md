@@ -1,7 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# React-Feedback-Popup
-
 [![build status](https://travis-ci.org/ya332/react-feedback-popup.svg?branch=master)](https://travis-ci.org/ya332/react-made-by)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 <a href="https://codeclimate.com/github/ya332/react-feedback-popup/maintainability"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/maintainability" /></a>
@@ -9,7 +7,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/ya332/react-made-by/blob/master/CONTRIBUTING.md)
 <a href="https://www.buymeacoffee.com/ya332" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/arial-yellow.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
 
+
+<a href="https://www.buymeacoffee.com/ya332" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/arial-yellow.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
+# React-Feedback-Popup
+
 React-Feedback-Popup is balzingly fast and highly customizable component to get user feedback.
+
+Collapsed Feedback Popup:
+<img src="./assets/collapsed_tag.png" alt="Demo tag" width="400" height="100">
+
+Expanded Feedback Popup:
+<img src="./assets/expanded_tag.png" alt="Demo tag" width="400" height="100">
 
 ### Features
 
@@ -42,7 +51,7 @@ Here's a sample implementation that creates the "Made By {NAME}" the component o
 ```javascript
 import React from 'react';
 import logo from './logo.svg';
-import FeedBack from './components/Feedback';
+import FeedBack from 'react-feedback-popup';
 import './App.css';
 
 function App() {
