@@ -3,7 +3,7 @@
 		"version": "1.0.0",
 		"description": "A highly customizable React component to get user feedback via a popup",
 		"files": [
-				"build"
+				"build/index.js"
 		],
 		"author": {
 				"name": "Yigit Alparslan",
