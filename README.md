@@ -24,7 +24,7 @@ Expanded Feedback Popup:
 
 # Live Demo
 
-[Live Demo at Codesanbox](https://codesandbox.io/s/silly-antonelli-cnix1?fontsize=14&hidenavigation=1&theme=dark)
+[Live Demo at Codesandbox](https://codesandbox.io/embed/competent-pine-qxluj?fontsize=14&hidenavigation=1&theme=dark)
 
 ### Features
 
