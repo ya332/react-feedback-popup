@@ -85,7 +85,7 @@ function App() {
 				buttonText="This is also custom"
 				handleClose={() => console.log("handleclose")}
 				handleSubmit={(data) => 
-					fetch('https://formspree.io/moqjznjg', {
+					fetch('xxxxxx', {
 						headers: {
 							Accept: 'application/json',
 							'Content-Type': 'application/json'
@@ -112,6 +112,8 @@ function App() {
 export default App;
 
 ```
+
+As you can see, the fetch address is xxxxxx. Here, you can provide a URL to send your POST request, so that the form can be submitted to this link. There are 3rd party tools like formspree.io, email.js, mailchimp, Amazon Lambda functions etc to send emails once you get the user data via this React Popup.
 
 
 <a name="Options"></a>
