@@ -21,6 +21,7 @@ function App() {
         </a>
 			</header>
 			<FeedBack
+				style={{zIndex:'1', position:'fixed', marginLeft:'200px'}}
 				position="left"
 				numberOfStars={5}
 				headerText="Hello"

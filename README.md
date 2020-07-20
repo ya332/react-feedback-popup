@@ -78,6 +78,7 @@ function App() {
         </a>
 			</header>
 			<FeedBack
+				style={{zIndex:'2', marginLeft:'20px', position:'fixed'}}
 				position="left"
 				numberOfStars={5}
 				headerText="Hello"
@@ -135,6 +136,7 @@ Sample Usage:
 
 ```js
 <FeedBack
+	style={{zIndex:'2', marginLeft:'20px', position:'fixed'}}
 	position="left"
 	numberOfStars={5}
 	headerText="Hello"
@@ -163,6 +165,12 @@ Sample Usage:
 	handleButtonClick={() => console.log("handleButtonClick")}
 
 />
+```
+### Styling
+style is a props to the Form component. You can overwrite the default values via passing CSS attributes.
+For example,
+```js
+style={{zIndex:'2', marginLeft:'20px', position:'fixed'}}
 ```
 
 ### Dev

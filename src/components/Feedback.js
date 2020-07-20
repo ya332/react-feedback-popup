@@ -102,7 +102,8 @@ class Feedback extends Component {
 			showEmailInput,
 			showRatingInput,
 			showMessageInput,
-			numberOfStars
+			numberOfStars,
+			style
 		} = this.props;
 
 		return (
@@ -110,6 +111,7 @@ class Feedback extends Component {
 				{this.state.showForm &&
 					<div>
 						<Form
+							style={style}
 							headerText={headerText}
 							numberOfStars={numberOfStars}
 							position={position}

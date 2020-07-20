@@ -32,12 +32,13 @@ class Form extends Component {
       showMessageInput,
       showRatingInput,
       numberOfStars,
-      bodyText
+      bodyText,
+      style
     } = this.props;
 
     var customFormStyles = handleCustomPosition(position, formStyles); 
     return(
-      <div style={customFormStyles}>
+      <div style={{...customFormStyles , ...style}}>
         <Header
           styles={headerStyles}
           headerText={headerText}
