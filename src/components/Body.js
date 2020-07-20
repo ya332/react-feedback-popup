@@ -33,7 +33,7 @@ const Body = ({ bodyText, bodyStyles, nameInput, messageInput, emailInput, ratin
 		}
 		{showMessageInput &&
 			<div>
-				<textarea rows="5" value={messageInput} placeholder="Enter your feedback here." onChange={e => handleMessageInput('message', e.target.value)} style={defaultMessageStyles} />
+				<textarea rows="5" value={messageInput} placeholder="Enter Your Feedback" onChange={e => handleMessageInput('message', e.target.value)} style={defaultMessageStyles} />
 			</div>
 		}
 		{showRatingInput &&
