@@ -24,7 +24,7 @@ Expanded Feedback Popup:
 
 # Live Demo
 
-[Live Demo at Codesandbox](https://codesandbox.io/embed/competent-pine-qxluj?fontsize=14&hidenavigation=1&theme=dark)
+[Live Demo at StackBlitz](https://stackblitz.com/edit/react-feedback-popup)
 
 ### Features
 
