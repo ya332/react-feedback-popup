@@ -143,7 +143,7 @@ Sample Usage:
 	buttonText="This is also custom"
 	handleClose={() => console.log("handleclose")}
 	handleSubmit={(data) => 
-		fetch('https://formspree.io/xxxxxx', {
+		fetch('https://teamgogoemail.herokuapp.com/receiver_email@gmail.com', {
 			headers: {
 				Accept: 'application/json',
 				'Content-Type': 'application/json'
