@@ -57,6 +57,7 @@ import React from 'react';
 import logo from './logo.svg';
 import FeedBack from 'react-feedback-popup';
 import './App.css';
+var axios = require('axios');
 
 function App() {
 	return (
@@ -84,7 +85,7 @@ function App() {
 				buttonText="This is also custom"
 				handleClose={() => console.log("handleclose")}
 				handleSubmit={(data) => 
-					fetch('xxxxxx', {
+					fetch('https://teamgogoemail.herokuapp.com/receiver_email@gmail.com', {
 						headers: {
 							Accept: 'application/json',
 							'Content-Type': 'application/json'
@@ -112,7 +113,7 @@ export default App;
 
 ```
 
-As you can see, the fetch address is xxxxxx. Here, you can provide a URL to send your POST request, so that the form can be submitted to this link. There are 3rd party tools like formspree.io, email.js, mailchimp, Amazon Lambda functions etc to send emails once you get the user data via this React Popup.
+As you can see, the fetch address is `https://teamgogoemail.herokuapp.com/receiver_email@gmail.com`. Here, you can provide use a service called https://teamgogoemail.herokuapp.com to forward the form submission to your email. There are also other 3rd party tools like formspree.io, email.js, mailchimp, Amazon Lambda functions etc to send emails once you get the user data via this React Popup Form.
 
 
 <a name="Options"></a>
