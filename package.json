@@ -74,7 +74,7 @@
 				"prop-types": "^15.6.0",
 				"react": "^16.0.0",
 				"react-dom": "^16.0.0",
-				"react-scripts": "^3.3.0",
+				"react-scripts": "^5.0.1",
 				"webpack": "^4.5.0",
 				"webpack-cli": "^3.2.1"
 		},
